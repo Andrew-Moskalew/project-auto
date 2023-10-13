@@ -1,12 +1,14 @@
 public class Engine {
     public int power;
     public double volume;
-    public String fuel;
+    public String fuelType;
+    public boolean turbo;
 
-    public Engine(int power, double volume, String fuel) {
+    public Engine(int power, double volume, String fuelType, boolean turbo) {
         this.power = power;
         this.volume = volume;
-        this.fuel = fuel;
+        this.fuelType = fuelType;
+        this.turbo = turbo;
     }
 
     @Override
@@ -14,7 +16,8 @@ public class Engine {
         return "Engine{" +
                 "power=" + power +
                 ", volume=" + volume +
-                ", fuel='" + fuel + '\'' +
+                ", fuelType='" + fuelType + '\'' +
+                ", turbo=" + turbo +
                 '}';
     }
 }

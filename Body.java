@@ -1,20 +1,17 @@
 public class Body {
     public String type;
-    public String color;
-    public String material;
+    public int numberofdoors;
 
-    public Body(String type, String color, String material) {
+    public Body(String type, int numberofdoors) {
         this.type = type;
-        this.color = color;
-        this.material = material;
+        this.numberofdoors = numberofdoors;
     }
 
     @Override
     public String toString() {
         return "Body{" +
                 "type='" + type + '\'' +
-                ", color='" + color + '\'' +
-                ", material='" + material + '\'' +
+                ", numberofdoors=" + numberofdoors +
                 '}';
     }
 }
